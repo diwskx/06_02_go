@@ -11,7 +11,7 @@ func main() {
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		_, err := w.Write([]byte("It works!"))
+		_, err := w.Write([]byte("It works! Jast set port 8888"))
 		if err != nil {
 			log.Print(err)
 		}
